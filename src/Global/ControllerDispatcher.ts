@@ -1,7 +1,7 @@
 import type { Block, CommandType, GameStatus } from "@/Global/types"
 
 import { RacingController, racingGameM } from "@/RacingGame/Controller/RacingController"
-import { LottoController, LottoM } from "@/Lotto/Controller/LottoController"
+import { LottoController } from "@/Lotto/Controller/LottoController"
 import { CalculatorController, CalculatorM } from "@/Caculator/Controller/CalculatorController"
 
 export interface CalcState {
