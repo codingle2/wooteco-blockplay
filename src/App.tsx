@@ -229,9 +229,10 @@ const App: React.FC = () => {
                     
                     {/* 블록 캔버스 (features/blocks/components/BlockCanvas.tsx) */}
                     <div 
-                        className="bg-white p-4 rounded-xl shadow-lg border-2 border-dashed border-gray-300 min-h-60 flex flex-col"
-                        onDragOver={(e) => e.preventDefault()} // 드롭을 허용하기 위해 기본 동작 방지 (팔레트 -> 캔버스 드롭 시 필요)
-                        onDrop={handleDrop} // 팔레트에서 드롭 처리
+                        className="bg-white p-4 rounded-xl shadow-lg border-2 border-dashed border-gray-300 
+                                min-h-60 max-h-96 overflow-y-auto flex flex-col"
+                        onDragOver={(e) => e.preventDefault()}
+                        onDrop={handleDrop}
                     >
                         <h2 className="text-xl font-bold mb-3 text-gray-800">
                             블록 캔버스 (스크립트)
